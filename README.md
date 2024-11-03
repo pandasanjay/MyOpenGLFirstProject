@@ -16,3 +16,13 @@ cmake -S . -B build
 #Build binary
 cmake --build build
 ```
+
+# Issues
+```
+MESA: error: ZINK: failed to choose pdev
+glx: failed to create drisw screen
+```
+## Solutions
+```bash
+export GALLIUM_DRIVER=llvmpipe
+```
